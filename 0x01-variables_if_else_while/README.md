@@ -3,3 +3,4 @@
 2- Prints the alphabet in lowercase
 3- Prints the alphabets in lowercase, then in uppercase
 4- Prints the alphabet in lowercase
+5- prints all single digit numbers of base 10 starting from 0, followed by a new line
