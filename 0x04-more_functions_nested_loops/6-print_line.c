@@ -2,7 +2,7 @@
 
 /**
  * print_line - draw a straight line in the terminal
- *
+ *@n: number of times underscores is printed
  * Description:
  * Where n is the number of times the character _ should be printed
  * The line should end with a \n
