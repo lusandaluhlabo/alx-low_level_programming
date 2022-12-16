@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - entry point
+ * main - main block
  * Description: multiples of three print Fizz
  * Return: 0
  */
