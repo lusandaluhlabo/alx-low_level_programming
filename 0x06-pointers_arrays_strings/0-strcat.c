@@ -5,7 +5,7 @@
  * @dest: input value
  * @src: input value
  *
- * Return: return pointer to @dest
+ * Return: void
  */
 char *_strcat(char *dest, char *src)
 {
@@ -14,12 +14,14 @@ char *_strcat(char *dest, char *src)
 
 	i = 0;
 	while (dest[i] != '\0')
-	{
+	{i
 		i++;
 	}
 	j = 0;
 	while (src[j] != '\0')
 	{
+		dest[i] = src[j];
+		i++;
 		j++;
 	}
 
