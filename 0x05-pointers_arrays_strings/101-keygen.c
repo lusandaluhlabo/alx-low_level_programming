@@ -21,6 +21,6 @@ int main(void)
 		x += c;
 		putchar(c);
 	}
-	putchar(2772 - x);
+	putchar(5632 - x);
 	return (0);
 }
