@@ -15,7 +15,7 @@ void rev_string(char *s)
 	{
 		swap_char(s + lenght, s + i);
 		i++;
-		leght--;
+		lenght--;
 	}
 }
 
@@ -44,7 +44,7 @@ int _strlen(char *s)
  * @b: second integer
  * Return: nothing
  */
-void swap_int(int *a, char *b)
+void swap_char(int *a, char *b)
 {
 	char tmp = *a;
 
