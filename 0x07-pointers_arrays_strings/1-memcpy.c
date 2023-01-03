@@ -2,9 +2,10 @@
 
 /**
  * *_memcpy - copies memory area
- * @dest: memory area
+ * @dest: first memory area
  * @src: memory area
  * @n: bytes of memory area
+ * Return: dest
  */
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
