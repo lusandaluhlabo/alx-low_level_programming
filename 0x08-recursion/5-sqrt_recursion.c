@@ -9,22 +9,25 @@
  */
 int _sqrt_recursion(int n)
 {
-	if (i * i == n)
-		return (i);
-	if (i * i > n)
-		return (-1);
-	return (_sqrt_recursion(n, i + 1));
+	return (halp(n, 1));
 }
 
 /**
- * main - main point
- * Return: 0
+ * halp - helper function to solve _sqrt_recursion
+ * @c: number to determine if square root
+ * @i: incrementer to compare against 'c'
+ * Return: square if natural root, or -1 if none found
  */
 
-int main(void)
+int halp(int c, int i)
 {
-	_sqrt_recursion(2, 1);
-	_sqrt_recursion(4, 1);
-	_sqrt_recursion(9, 1);
-	return (0);
+	int square;
+
+	square = i + i;
+	if (square == c)
+		return (i);
+	else if (square < c)
+		return (halp(c, i + i));
+	else
+		return (-1);
 }
