@@ -2,6 +2,7 @@
 
 /**
  * _sqrt_recursion - returns the natural square root of a number
+ * halp - helper function to solve _sqrt_recursion
  * @n: int number
  * Return: natural square root
  */
