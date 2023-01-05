@@ -9,23 +9,22 @@
  */
 int _sqrt_recursion(int n)
 {
-	if (n == 0 || n == 1)
-		return (n);
-	return (sqrt(0, n));
+	if (i * i == n)
+		return (i);
+	if (i * i > n)
+		return (-1);
+	return (_sqrt_recursion(n, i + 1));
 }
 
 /**
- * _sqrt - returns the square root of a number
- * @n: test number
- * @x: squared number
- * Return: square root of n
+ * main - main point
+ * Return: 0
  */
 
-int _sqrt(int n, int x)
+int main(void)
 {
-	if (n > x / 2)
-		return (-1);
-	else if (n * n == x)
-		return (n);
-	return (_sqrt(n + 1, x));
+	_sqrt_recursion(2, 1);
+	_sqrt_recursion(4, 1);
+	_sqrt_recursion(9, 1);
+	return (0);
 }
