@@ -23,7 +23,7 @@ int halp(int c, int i)
 {
 	int square;
 
-	square = i + i;
+	square = i * i;
 	if (square == c)
 		return (i);
 	else if (square < c)
