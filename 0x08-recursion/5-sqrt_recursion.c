@@ -10,7 +10,7 @@ int _sqrt_recursion(int n)
 {
 	if (n == 0 || n == 1)
 		return (n);
-	return (_sqrt_recursion(0, n));
+	return (sqrt(0, n));
 }
 
 /**
