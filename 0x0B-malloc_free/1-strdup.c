@@ -2,29 +2,30 @@
 
 /**
  * _strdup - returns a pointer to a newly allocated space in memory
- * @str: string
- * Return: returns NULL
+ * @str: string to be compied
+ * Return: returns NULL if error, pointer to allocated space
  */
 
 char *_strdup(char *str)
 {
+	char *cpy;
+	int index, len;
+
 	if (str == NULL)
-	{
 		return (NULL);
-	}
+	for (index = 0; str[index]; index++)
+		len++;
+	cpy = malloc(sizeof(char) * (len + 1));
 
-	unsigned int len = strlen(str) + 1;
-	char *ptr = (char *)malloc(len * sizeof(char));
-
-	if (ptr == NULL)
-	{
+	if (cpy == NULL)
 		return (NULL);
-	}
 
-	for (unsigned int i = 0; i < len; i++)
+	for (index = 0; str[index]; index++)
 	{
-		ptr[i] = str[i];
+		cpy[index] = str[index];
 	}
 
-	return (ptr);
+	cpy[len] = '\0';
+
+	return (cpy);
 }
