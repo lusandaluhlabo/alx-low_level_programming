@@ -8,22 +8,50 @@
 
 int is_palindrome(char *s)
 {
-	if (s == NULL || s[0] == '\0')
-	{
+	int index = 0;
+	int len = find_strlen(s);
+
+	if (!(*s))
 		return (1);
-	}
 
-	char *start = s;
-	char *end = s + strlen(s) - 1;
+	return (check_palindrome(s, len, index));
+}
 
-	while (start < end)
+/**
+ * find_strlen - returns the length of a string
+ * @s: string to be measured
+ * Return: length of a string
+ */
+
+int find_strlen(char *s)
+{
+	int len = 0;
+
+	if (*(s + len))
 	{
-		if (*start != *end)
-		{
-			return (0);
-		}
-		start++;
-		end--;
+		len++;
+		len += find_strlen(s + len);
 	}
-	return (1);
+	return (len);
+}
+
+/**
+ * check_palindrome - checks if a string is a palindrome
+ * @s: string to be checked
+ * @len: length of s
+ * @index: index of a string to be checked
+ *
+ * Return: if a string is a palindrome - 1
+ * If a string is not a palindrome- 0
+ */
+
+int check_palindrome(char *s, int len, int index)
+{
+	if (s[index] == s[len / 2])
+		return (1);
+
+	if (s[index] == s[len - index - 1])
+		return (check_palindrome(s. len, index + 1));
+
+	return (0);
 }
