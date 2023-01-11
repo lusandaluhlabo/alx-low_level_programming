@@ -1,3 +1,7 @@
+#define MAIN_H
+
+#include <unistd.h>
+
 void _puts_recursion(char *s);
 void _print_rev_recursion(char *s);
 int _strlen_recursion(char *s);
@@ -10,4 +14,4 @@ int halp(int c, int i);
 int hai(int n, int d);
 int _sqrt(int x, int i);
 int is_palindrome(char *s);
-int wildcmp(char *s1, char *s2)
+int wildcmp(char *s1, char *s2);
