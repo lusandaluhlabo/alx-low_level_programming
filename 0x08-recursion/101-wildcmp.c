@@ -1,12 +1,11 @@
 #include "main.h"
 
 /*
- * wildcmp - compose two strings and returns 1 if identical
+ * wildcmp - compare two strings and returns 1 if identical
  * @s1: first string
  * @s2: pattern to be used
  * Return: 1 if identical, otherwise 0
  */
-
 int wildcmp(char *s1, char *s2)
 {
 	if (*s2 == '\0')
