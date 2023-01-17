@@ -4,6 +4,7 @@
 
 int main()
 {
+	printf("%d\n", SIZE);
 	printf("%lf", PI);
 
 	return (0);
