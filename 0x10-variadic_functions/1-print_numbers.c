@@ -4,6 +4,8 @@
  * print_numbers - prints numbers
  * @separator: string to be printed
  * @n: number of integers passed to the function
+ *
+ * Return: returns nothing
  */
 
 void print_numbers(const char *separator, const unsigned int n, ...)
