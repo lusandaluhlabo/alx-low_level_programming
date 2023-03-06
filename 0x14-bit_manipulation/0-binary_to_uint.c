@@ -1,4 +1,3 @@
-#include "main.h"
 
 /**
  * binary_to_unit - converts a binary to an unsigned int
@@ -45,4 +44,5 @@ int check_valid_string(const char *b)
 		b++;
 	}
 	return (1);
-
+}
+~
